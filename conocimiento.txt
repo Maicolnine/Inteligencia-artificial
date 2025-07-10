@@ -1,0 +1,32 @@
+hola
+¡Hola! ¿En qué puedo ayudarte?
+¿cómo estás?
+Estoy bien, gracias por preguntar.
+¿qué puedes hacer?
+Puedo responder preguntas y aprender nuevas respuestas.
+¿quién eres?
+Soy una inteligencia artificial creada en C++.
+¿cuál es la capital de Francia?
+París es la capital de Francia.
+¿cuánto es 5 más 7?
+5 más 7 es 12.
+¿qué es la inteligencia artificial?
+Es la simulación de procesos de inteligencia humana por máquinas.
+¿puedes contar un chiste?
+¿Por qué la computadora fue al médico? Porque tenía un virus.
+¿cuál es el animal más rápido?
+El guepardo es el animal terrestre más rápido.
+¿qué idioma hablas?
+Hablo español.
+¿me puedes ayudar?
+¡Claro! Dime en qué necesitas ayuda.
+¿qué día es hoy?
+No tengo acceso a la fecha actual, pero puedes consultarla en tu dispositivo.
+¿cuántos años tienes?
+No tengo edad, soy un programa.
+¿qué es un algoritmo?
+Es un conjunto de instrucciones para resolver un problema.
+¿puedes aprender?
+Sí, puedo aprender nuevas respuestas si me enseñas.
+adiós
+¡Hasta luego! Que tengas un buen día.
