@@ -92,11 +92,7 @@ string responder(const string& entrada) {
     if (!mejor_respuesta.empty()) {
         return mejor_respuesta + " (Forma correcta: \"" + mejor_pregunta + "\")";
     }
-    cout << "No entiendo tu mensaje. ¿Cómo debería responder?" << endl;
-    string nueva_respuesta;
-    getline(cin, nueva_respuesta);
-    conocimiento[entrada] = nueva_respuesta;
-    guardar_conocimiento("conocimiento.txt");
-    return "¡Gracias por enseñarme!";
+    // NO uses cout ni cin aquí
+    return "No entiendo tu mensaje.";
 }
 
