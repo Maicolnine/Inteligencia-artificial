@@ -1,13 +1,10 @@
-#include <iostream>
-#include <string>
+#include "ia.h"
 #include <map>
 #include <fstream>
-#include <windows.h>
 #include <algorithm>
-#include <limits>
-#include <locale>
 #include <vector>
 #include <cctype>
+#include <iostream> // <-- Agrega esto
 using namespace std;
 
 map<string, string> conocimiento;
@@ -103,18 +100,3 @@ string responder(const string& entrada) {
     return "¡Gracias por enseñarme!";
 }
 
-int main() {
-    SetConsoleOutputCP(CP_UTF8); // Habilita UTF-8 en la consola de Windows
-    cargar_conocimiento("conocimiento.txt");
-    string mensaje;
-    while (true) {
-        cout << "Escribe un mensaje (o escribe 'salir' para terminar): ";
-        getline(cin, mensaje);
-        if (mensaje == "salir") break;
-        cout << responder(mensaje) << endl;
-    }
-    guardar_conocimiento("conocimiento.txt");
-    return 0;
-}
-
-#pragma execution_character_set("utf-8")
