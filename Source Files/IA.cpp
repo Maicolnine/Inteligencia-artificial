@@ -1,25 +1,34 @@
 #include "ia.h"
+#include <QDebug> // <-- Agrega esto
 #include <map>
 #include <fstream>
 #include <algorithm>
 #include <vector>
 #include <cctype>
-#include <iostream> // <-- Agrega esto
+#include <iostream>
 using namespace std;
 
 map<string, string> conocimiento;
 
 void cargar_conocimiento(const string& archivo) {
     ifstream fin(archivo);
-    if (!fin.is_open()) return;
+    if (!fin.is_open()) {
+        qDebug() << "No se pudo abrir el archivo de conocimiento.";
+        return;
+    }
     string pregunta, respuesta;
     while (getline(fin, pregunta) && getline(fin, respuesta)) {
         conocimiento[pregunta] = respuesta;
     }
     fin.close();
+    qDebug() << "Conocimiento cargado:" << conocimiento.size();
 }
 
 void guardar_conocimiento(const string& archivo) {
+    if (conocimiento.empty()) {
+        qDebug() << "No se guarda porque el conocimiento está vacío.";
+        return;
+    }
     ofstream fout(archivo);
     for (const auto& par : conocimiento) {
         fout << par.first << endl << par.second << endl;

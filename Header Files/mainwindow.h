@@ -18,7 +18,9 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButtonEnviar_clicked(); // <-- AGREGA ESTA LÍNEA
+    void on_pushButtonEnviar_clicked();
+    void on_pushButtonAgregar_clicked(); // <-- NUEVO
+    void on_pushButton_clicked(); // Para el botón "Enseñar"
 
 private:
     Ui::MainWindow *ui;
